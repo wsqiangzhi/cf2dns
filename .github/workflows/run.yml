@@ -1,11 +1,12 @@
 name: 'GitHub Actions CloudFlare2 Bot'
 
 on:
+  workflow_dispatch:
   push:
     branches: 
       - master
   schedule:
-    - cron: '*/25 * * * *'
+    - cron: '*/15 * * * *'
 
 jobs:
   build:
